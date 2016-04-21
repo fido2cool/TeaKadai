@@ -1,0 +1,69 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PeepSo Core: Tags\n"
+"POT-Creation-Date: 2016-03-30 09:06+0800\n"
+"PO-Revision-Date: 2016-03-30 09:06+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: peepsotags.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: peepsotags.php:184
+msgid "plugin requires the PeepSo plugin to be installed and activated."
+msgstr ""
+
+#: peepsotags.php:186
+msgid "Get it now!"
+msgstr ""
+
+#: peepsotags.php:276
+msgid "Tagged you in a post"
+msgstr ""
+
+#: peepsotags.php:292
+msgid "You Were Tagged in a Post"
+msgstr ""
+
+#: peepsotags.php:308
+msgid "User Tagged Email"
+msgstr ""
+
+#: peepsotags.php:309
+msgid "This will be sent to a user when a tagged in post."
+msgstr ""
+
+#: peepsotags.php:331
+msgid "Tags"
+msgstr ""
+
+#: peepsotags.php:334
+msgid "You were Tagged in a Post"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "PeepSo Core: Tags"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://peepso.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add Tags capability to PeepSo, a Social Networking Plugin for WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "PeepSo"
+msgstr ""

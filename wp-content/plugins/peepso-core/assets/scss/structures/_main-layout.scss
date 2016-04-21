@@ -1,0 +1,191 @@
+//
+//  MAIN LAYOUT
+//
+
+
+
+.ps-body {
+  @extend %clearfix;
+}
+
+
+.ps-main {
+  width: 100%;
+
+  @include media('large') {
+    @if ($scss-stream-position == left) {
+      float: left;
+      padding-left: 0;
+      padding-right: $padding-base;
+    }
+
+    @else {
+      float: left;
+      padding-left: $padding-base;
+    }
+
+    width: $primary-width;
+  }
+}
+
+
+.ps-main-full {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.ps-sidebar {
+  width: 100%;
+
+  @include media('large') {
+    @if ($scss-stream-position == left) {
+      float: right;
+      padding-right: 0;
+    }
+
+    @else {
+      float: left;
+    }
+
+    width: $secondary-width;
+  }
+}
+
+
+.ps-page {
+  position: relative;
+  padding: $padding-base;
+  background-color: $page-bg;
+  border: $page-border;
+
+  @extend %clearfix;
+}
+
+
+.ps-page-unstyled {
+  position: relative;
+  padding: 0;
+
+  @extend %clearfix;
+}
+
+
+.ps-page-messages {
+  border: $page-border;
+}
+
+
+.ps-page-profile {
+  .ps-toolbar,
+  .ps-toolbar-desktop {
+    margin-bottom: 0;
+  }
+
+  .ps-toolbar-menu {
+    margin-top: 0;
+  }
+}
+
+
+.ps-page-title {
+  padding: 0;
+  margin-top: 0 !important;
+  margin-bottom: $padding-base !important;
+  color: $page-title-color;
+  font-size: $page-title-font-size !important;
+  line-height: $page-title-line-height;
+
+  &-single {
+    padding: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: $page-title-color;
+    font-size: $page-title-font-size !important;
+    line-height: $page-title-line-height;
+  }
+}
+
+
+.ps-page-filters {
+  margin-bottom: $padding-lg;
+
+  @include media('large') {
+    display: table;
+    width: 100%;
+  }
+}
+
+
+.ps-filters-row {
+  label {
+    display: block;
+    line-height: 22px;
+    color: $color-text;
+  }
+
+  .ps-checkbox {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .ps-select {
+    width: 100%;
+    height: 35px;
+  }
+
+  @include media('large') {
+    display: table-cell;
+
+    .ps-select {
+      width: auto;
+      min-width: 150px;
+    }
+  }
+}
+
+
+.ps-page-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.ps-page-footer {
+  margin-top: $padding-base;
+}
+
+
+.ps-page-split {
+  display: block;
+  width: 100%;
+  table-layout: fixed;
+
+  @include media('medium') {
+    display: table;
+  }
+}
+
+
+.ps-page-half {
+  display: block;
+
+  &.show-thumbnail {
+    vertical-align: middle;
+  }
+
+  &:first-child {
+    padding-right: $padding-base;
+  }
+
+  &:last-child {
+    padding: $padding-base;
+    background-color: $page-half-bg;
+  }
+
+  @include media('medium') {
+    display: table-cell;
+  }
+}

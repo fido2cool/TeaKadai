@@ -1,0 +1,27 @@
+//
+//  NOTIFICATIONS
+//
+
+
+
+.ps-notifications {
+  .ps-avatar-comment,
+  .ps-comment-body {
+    padding-top: $padding-sm;
+    padding-bottom: $padding-sm;
+  }
+}
+
+
+.ps-notifications-check {
+  position: relative;
+  display: table-cell;
+  padding-right: $padding-base;
+  width: 20px;
+  vertical-align: middle;
+
+  input[type="checkbox"] {
+    margin: auto;
+    padding: 0;
+  }
+}

@@ -1,0 +1,35 @@
+//
+//  TYPOGRAPHY
+//
+
+
+
+.ps-text-center {
+  text-align: center;
+}
+
+
+.ps-text-left {
+  text-align: left;
+}
+
+
+.ps-text-right {
+  text-align: right;
+}
+
+
+.ps-text-muted {
+  color: $color-gray;
+}
+
+
+.ps-text-danger {
+  color: $color-danger;
+}
+
+
+.ps-text-title {
+  margin-top: 0 !important;
+  margin-bottom: $padding-base !important;
+}

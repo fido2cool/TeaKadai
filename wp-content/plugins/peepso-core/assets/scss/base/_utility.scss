@@ -1,0 +1,203 @@
+//
+//  UTILITY
+//
+
+
+
+%clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+%rounded {
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -o-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+
+%rounded--small {
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -o-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+
+%no-rounded {
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;   
+   -webkit-border-radius: 0 !important;   
+   -moz-border-radius: 0 !important;    
+   border-radius: 0 !important;
+}
+
+
+%bordered {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+
+%box-shadow {
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+%box-shadow-dark {
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+%circle {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+
+.ps-content-wrapper {
+  padding: 0;
+  background-color: $content-wrap-bg;
+
+  @extend %clearfix;
+}
+
+
+.ps-padding {
+  padding: $padding-base;
+}
+
+
+.ps-left {
+  float: left !important;
+}
+
+
+.ps-right {
+  float: right !important;
+}
+
+
+.clearfix {
+  @extend %clearfix;
+}
+
+
+.ps-gap {
+  padding-top: $padding-sm;
+  padding-bottom: $padding-sm;
+}
+
+
+.reset-gap {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+
+.block {
+  display: block;
+}
+
+
+.ps-hidden-mobile {
+  @include media('small') {
+    display: none !important;
+  }
+}
+
+
+.ps-full {
+  width: 100% !important;
+}
+
+
+.ps-full-mobile {
+  @include media('xsmall') {
+    width: 100% !important;
+  }
+}
+
+
+.ps-half {
+  width: 50%;
+}
+
+
+.ps-emoticon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+
+.ps-notification-counter {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 1px 2px;
+  border-radius: $notif-counter-border;
+  background-color: $notif-counter-bg;
+  color: $notif-counter-color;
+  font-size: 9px;
+  line-height: 10px;
+}
+
+
+.ps-loading-image {
+  text-align: center;
+
+  @extend %clearfix;
+}
+
+
+[class^="ps-icon-"] {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-language-override: normal;
+  font-kerning: auto;
+  font-synthesis: weight style;
+  font-variant: normal;
+  font-size: inherit;
+  text-rendering: auto;
+  vertical-align: top;
+}
+
+
+/*  Datepicker max-width fix for Twenty Fifteen theme */
+.datepicker-dropdown {
+  max-width: 220px;
+}
+
+
+.ps-lightbox-data {
+  background-color: $lightbox-bg !important;
+}
+
+.ps-lightbox-close {
+  color: $lightbox-icon-color;
+}

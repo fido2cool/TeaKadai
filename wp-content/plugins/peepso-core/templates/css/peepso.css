@@ -1,0 +1,132 @@
+/*
+    PEEPSO ADMIN CSS
+    A list of styles used only in admin section.
+
+    */
+
+
+
+.toplevel_page_peepso .wp-menu-image > img {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 7px 8px !important;
+}
+
+
+.memberdiv img {
+  max-width: 100%;
+  padding: 1px;
+  border-radius: 100%;
+  border: 2px solid #DCE3ED;
+}
+
+
+.toplevel_page_peepso .avg-avatar {
+  margin-bottom: 5px;
+}
+
+
+.edit-message {
+  display: none;
+  background: #EDFEFF;
+  color: #4D556B;
+  text-align: center;
+  padding: 15px 30px;
+  border: 2px solid #7DBEFE;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.approve-links {
+  margin: 5px 0 8px;
+}
+
+
+.cta-full {
+  margin-top: 15px;
+}
+
+
+/*  Form  */
+.ps-form__helper {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555;
+}
+
+
+/*  Dialog window  */
+.ps-dialog__wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.75);
+}
+
+
+.ps-dialog {
+  position: absolute;
+  z-index: 1050;
+  top: 50%;
+  width: 100%;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+
+.ps-dialog__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px;
+  color: #fff;
+  background-color: #000;
+}
+
+
+.ps-dialog__subtitle {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+
+.ps-dialog__body {
+  padding: 15px;
+  font-size: 14px;
+}
+
+
+.ps-dialog__body textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.ps-dialog__footer {
+  padding: 15px;
+  background-color: #f5f5f5;
+  text-align: right;
+}
+
+
+.ps-dialog__footer .button {
+  height: auto;
+  box-shadow: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .ps-dialog {
+    left: 50%;
+    max-width: 600px;
+    margin-left: -300px;
+  }
+}

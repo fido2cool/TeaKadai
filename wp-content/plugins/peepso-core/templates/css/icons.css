@@ -1,0 +1,397 @@
+/*  PeepSo Base Icons  */
+
+@font-face {
+  font-family: 'PeepSo';
+  src: url(../../assets/fonts/PeepSo.eot);
+  src: url(../../assets/fonts/PeepSo.eot?#iefix) format("embedded-opentype"),
+  url(../../assets/fonts/PeepSo.ttf) format("truetype"),
+  url(../../assets/fonts/PeepSo.woff) format("woff"),
+  url(../../assets/fonts/PeepSo.svg#PeepSo) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+00-FFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ps-icon-"]:before,
+[class*=" ps-icon-"]:before {
+  font-family: "PeepSo";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  color: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: 0.2em;
+  vertical-align: top;
+}
+
+.ps-icon-menu:before {
+  content: "\e661";
+}
+
+.ps-icon-search-user:before {
+  content: "\e600";
+}
+
+.ps-icon-exit:before {
+  content: "\e602";
+}
+
+.ps-icon-happy:before {
+  content: "\e603";
+}
+
+.ps-icon-search:before {
+  content: "\e61d";
+}
+
+.ps-icon-star:before {
+  content: "\e61e";
+}
+
+.ps-icon-star-empty:before {
+  content: "\e61f";
+}
+
+.ps-icon-ok:before {
+  content: "\e620";
+}
+
+.ps-icon-remove:before {
+  content: "\e621";
+}
+
+.ps-icon-cog:before {
+  content: "\e622";
+}
+
+.ps-icon-camera:before {
+  content: "\e623";
+}
+
+.ps-icon-lock:before {
+  content: "\e624";
+}
+
+.ps-icon-trash:before {
+  content: "\e625";
+}
+
+.ps-icon-tag:before {
+  content: "\e626";
+}
+
+.ps-icon-tags:before {
+  content: "\e627";
+}
+
+.ps-icon-play-circle:before {
+  content: "\e628";
+}
+
+.ps-icon-videocam:before,
+.ps-icon-facetime-video:before {
+  content: "\e629";
+}
+
+.ps-icon-picture:before {
+  content: "\e62a";
+}
+
+.ps-icon-pencil:before {
+  content: "\e62b";
+}
+
+.ps-icon-pause:before {
+  content: "\e62c";
+}
+
+.ps-icon-play:before {
+  content: "\e62d";
+}
+
+.ps-icon-stop:before {
+  content: "\e62e";
+}
+
+.ps-icon-angle-left:before {
+  content: "\e62f";
+}
+
+.ps-icon-angle-right:before {
+  content: "\e630";
+}
+
+.ps-icon-angle-up:before {
+  content: "\e631";
+}
+
+.ps-icon-angle-down:before {
+  content: "\e632";
+}
+
+.ps-icon-caret-down:before {
+  content: "\e633";
+}
+
+.ps-icon-caret-up:before {
+  content: "\e634";
+}
+
+.ps-icon-caret-left:before {
+  content: "\e635";
+}
+
+.ps-icon-caret-right:before {
+  content: "\e636";
+}
+
+.ps-icon-envelope-alt:before {
+  content: "\e637";
+}
+
+.ps-icon-play-sign:before {
+  content: "\e638";
+}
+
+.ps-icon-calendar-empty:before {
+  content: "\e639";
+}
+
+.ps-icon-bullhorn:before {
+  content: "\e63a";
+}
+
+.ps-icon-upload:before {
+  content: "\e63b";
+}
+
+.ps-icon-folder-close:before {
+  content: "\e63c";
+}
+
+.ps-icon-folder-open:before {
+  content: "\e63d";
+}
+
+.ps-icon-comments:before {
+  content: "\e63e";
+}
+
+.ps-icon-unlock:before {
+  content: "\e63f";
+}
+
+.ps-icon-globe:before {
+  content: "\e640";
+}
+
+.ps-icon-wrench:before {
+  content: "\e641";
+}
+
+.ps-icon-link:before {
+  content: "\e642";
+}
+
+.ps-icon-edit:before {
+  content: "\e643";
+}
+
+.ps-icon-thumbs-down:before {
+  content: "\e644";
+}
+
+.ps-icon-thumbs-up:before {
+  content: "\e645";
+}
+
+.ps-icon-youtube-play:before {
+  content: "\e646";
+}
+
+.ps-icon-share:before,
+.ps-icon-forward:before {
+  content: "\e647";
+}
+
+.ps-icon-user:before {
+  content: "\e648";
+}
+
+.ps-icon-download:before {
+  content: "\e649";
+}
+
+.ps-icon-volume-off:before {
+  content: "\e64a";
+}
+
+.ps-icon-volume-down:before {
+  content: "\e64b";
+}
+
+.ps-icon-volume-up:before {
+  content: "\e64c";
+}
+
+.ps-icon-cloud-upload:before {
+  content: "\e64d";
+}
+
+.ps-icon-file-text:before {
+  content: "\e64e";
+}
+
+.ps-icon-map-marker:before {
+  content: "\e64f";
+}
+
+.ps-icon-home:before {
+  content: "\e650";
+}
+
+.ps-icon-comment:before {
+  content: "\e651";
+}
+
+.ps-icon-file:before {
+  content: "\e652";
+}
+
+.ps-icon-calendar:before {
+  content: "\e653";
+}
+
+.ps-icon-plus:before {
+  content: "\e654";
+}
+
+.ps-icon-plus-sign:before {
+  content: "\e655";
+}
+
+.ps-icon-minus:before {
+  content: "\e656";
+}
+
+.ps-icon-minus-sign:before {
+  content: "\e657";
+}
+
+.ps-icon-warning-sign:before {
+  content: "\e658";
+}
+
+.ps-icon-check-empty:before {
+  content: "\e659";
+}
+
+.ps-icon-check:before {
+  content: "\e65a";
+}
+
+.ps-icon-radio-unchecked:before {
+  content: "\e65b";
+}
+
+.ps-icon-radio-checked:before {
+  content: "\e65c";
+}
+
+.ps-icon-eye:before {
+  content: "\e65d";
+}
+
+.ps-icon-user2:before {
+  content: "\e65e";
+}
+
+.ps-icon-users:before {
+  content: "\e65f";
+}
+
+.ps-icon-user-add:before {
+  content: "\e660";
+}
+
+
+/*  PeepSo Social Icons  */
+
+@font-face {
+  font-family: 'peepso-social';
+  src: url('../../assets/fonts/peepso-social.eot?5793615');
+  src: url('../../assets/fonts/peepso-social.eot?5793615#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/peepso-social.woff2?5793615') format('woff2'),
+       url('../../assets/fonts/peepso-social.woff?5793615') format('woff'),
+       url('../../assets/fonts/peepso-social.ttf?5793615') format('truetype'),
+       url('../../assets/fonts/peepso-social.svg?5793615#peepso-social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'peepso-social';
+    src: url('../font/peepso-social.svg?95590310#peepso-social') format('svg');
+  }
+}
+*/
+ 
+[class^="ps-icon--social-"]:before, [class*=" ps-icon--social-"]:before {
+  font-family: "peepso-social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  color: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: top;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.ps-icon--social-wordpress:before { content: '\e800'; } /* '' */
+.ps-icon--social-yahoo:before { content: '\e801'; } /* '' */
+.ps-icon--social-linkedin:before { content: '\e802'; } /* '' */
+.ps-icon--social-disqus:before { content: '\e803'; } /* '' */
+.ps-icon--social-instagram:before { content: '\e804'; } /* '' */
+.ps-icon--social-reddit:before { content: '\e805'; } /* '' */
+.ps-icon--social-foursquare:before { content: '\e806'; } /* '' */
+.ps-icon--social-lastfm:before { content: '\e807'; } /* '' */
+.ps-icon--social-tumblr:before { content: '\e808'; } /* '' */
+.ps-icon--social-stackoverflow:before { content: '\e809'; } /* '' */
+.ps-icon--social-github:before { content: '\e80a'; } /* '' */
+.ps-icon--social-dribbble:before { content: '\e80b'; } /* '' */
+.ps-icon--social-500px:before { content: '\e80c'; } /* '' */
+.ps-icon--social-steam:before { content: '\e80d'; } /* '' */
+.ps-icon--social-vkontakte:before { content: '\e80e'; } /* '' */
+.ps-icon--social-live:before { content: '\e80f'; } /* '' */
+.ps-icon--social-odnoklassniki:before { content: '\e810'; } /* '' */
+.ps-icon--social-twitchtv:before { content: '\e811'; } /* '' */
+.ps-icon--social-mixi:before { content: '\e812'; } /* '' */
+.ps-icon--social-yandex:before { content: '\e813'; } /* '' */
+.ps-icon--social-twitter:before { content: '\e814'; } /* '' */
+.ps-icon--social-google:before { content: '\e815'; } /* '' */
+.ps-icon--social-facebook:before { content: '\e816'; } /* '' */
+.ps-icon--social-skyrock:before { content: '\e817'; } /* '' */
+.ps-icon--social-mailru:before { content: '\e818'; } /* '' */
+.ps-icon--social-aol:before { content: '\e819'; } /* '' */
+.ps-icon--social-goodreads:before { content: '\e81a'; } /* '' */
+.ps-icon--social-pixelpin:before { content: '\e81b'; } /* '' */

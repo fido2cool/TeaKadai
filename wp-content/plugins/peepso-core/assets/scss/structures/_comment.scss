@@ -1,0 +1,260 @@
+//
+//  COMMENT STRUCTURE
+//
+
+
+
+.ps-comment {
+  position: relative;
+  background-color: $comment-bg;
+
+  @extend %clearfix;
+}
+
+
+.ps-comment-item {
+  position: relative;
+  display: table;
+  width: 100%;
+  padding: $padding-sm $padding-base;
+  border-top: $comment-item-separator;
+  color: $comment-item-color;
+
+  a {
+    word-break: break-all;
+  }
+}
+
+
+.ps-comment-body {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: $padding-base;
+  word-break: break-word;
+
+  .ps-tagging-wrapper {
+    background-color: $tagging-wrapper-bg;
+  }
+
+  .ps-textarea:focus {
+    border-width: 1px;
+  }
+
+  .ps-tagging-beautifier {
+    border: 1px solid transparent;
+    padding: $padding-sm;
+    line-height: 16px;
+  }
+
+  p {
+    font-size: $font-size-alt;
+    line-height: $line-height-base;
+  }
+}
+
+
+.ps-comment-message {
+  margin-top: ($padding-sm / 2);
+  margin-bottom: $padding-sm;
+
+  p {
+    margin-bottom: 0;
+
+    &:first-child {
+      display: inline;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.ps-comment-content {
+  word-break: break-word;
+
+  p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+
+.ps-comment-links {
+  display: inline-block;
+  padding-left: ($padding-sm / 2);
+  vertical-align: middle;
+  font-size: $font-size-sm;
+
+  a {
+    opacity: 0.75;
+    vertical-align: middle;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  a > span {
+    display: none;
+  }
+
+  @include media('medium') {
+    a > span {
+      display: inline-block;
+    }
+  }
+}
+
+
+.ps-comment-user {
+  font-size: $font-size-alt;
+  font-weight: bold;
+}
+
+
+.ps-comment-time {
+  color: $color-text-light;
+
+  small {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+.ps-comment-options {
+  position: absolute;
+  top: $padding-sm;
+  right: $padding-sm;
+}
+
+
+.ps-comment-more {
+  padding: $padding-sm $padding-base;
+  border-bottom: $comment-more-separator;
+  font-size: $font-size-sm;
+  line-height: $font-size-sm;
+}
+
+
+.ps-comment-edit {
+  margin-bottom: $padding-sm;
+
+  .ps-textarea-wrapper {
+    margin-bottom: $padding-sm;
+  }
+}
+
+
+.ps-comment-reply {
+  position: relative;
+  left: 0;
+  right: 0.1px;
+  display: table;
+  width: 100%;
+  padding: $padding-base;
+  border-top: $comment-reply-separator;
+  background-color: $comment-reply-bg;
+
+  .ps-comment-send,
+  .ps-textarea-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .ps-comment-send {
+    @include media('medium') {
+      width: 115px;
+    }
+  }
+
+  .ps-avatar {
+    display: none;
+    width: 32px;
+    vertical-align: middle;
+
+    img {
+      width: auto;
+      max-width: 32px;
+      padding: 0;
+      border-color: transparent;
+    }
+
+    @include media('medium') {
+      display: table-cell;
+    }
+  }
+
+  .ps-textarea-wrapper {
+    @include media('medium') {
+      padding-left: $padding-base;
+    }
+  }
+
+  .ps-textarea {
+    min-height: 35px;
+    height: 35px;
+    line-height: 16px;
+    resize: none;
+    transition: none !important;
+
+    &:focus {
+      border-width: 1px;
+    }
+  }
+
+  .textntags-wrapper {
+    height: 35px;
+  }
+
+  .ps-button-cancel {
+    display: none;
+
+    @include media('medium') {
+      display: inline-block;
+    }
+  }
+
+  .ps-tagging-wrapper {
+    background-color: $tagging-wrapper-bg;
+  }
+
+  .ps-tagging-beautifier {
+    border: 1px solid transparent;
+    padding: $padding-sm;
+    line-height: $line-height-sm;
+  }
+}
+
+
+.ps-comment-media {
+  margin-bottom: $padding-base;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:empty {
+    margin-bottom: 0;
+  }
+}
+
+
+.ps-comment-actions {
+  text-align: right;
+}
+
+
+.ps-comment-loading {
+  padding-left: $padding-sm;
+}
+
+
+.ps-comment-attachment {
+  img {
+    border-radius: $border-radius;
+  }
+}

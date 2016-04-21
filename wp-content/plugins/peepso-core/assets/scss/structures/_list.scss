@@ -1,0 +1,187 @@
+//
+//  LIST STRUCTURE
+//
+
+
+
+%ps-list {
+  list-style-type: none;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+
+.ps-list,
+.ps-list-half,
+.ps-list-info,
+.ps-list-inline,
+.ps-list-column,
+.ps-list-thumbnail,
+.ps-list-alerts {
+  @extend %ps-list;
+  @extend %clearfix;
+}
+
+
+.ps-list-classic {
+  list-style-type: disc;
+
+  > li {
+    list-style-type: disc !important;
+  }
+}
+
+
+.ps-list-inline {
+  .ps-list-item {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+.ps-list-half {
+  margin: -2px !important;
+}
+
+
+.ps-list-thumbnail {
+  margin: -2px !important;
+
+  .ps-avatar {
+    max-width: 100px;
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
+
+  @include media('large') {
+    .ps-avatar {
+      max-width: 64px;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+
+.ps-list-item {
+  padding: 0;
+  margin: 0;
+
+  .ps-list-half & {
+    float: left;
+    width: 50%;
+    padding: 2px;
+    margin: 0;
+    border: none !important;
+  }
+  
+  .ps-list-thumbnail & {
+    float: left;
+    width: 25%;
+    padding: 2px;
+    margin: 0;
+    border: none !important;
+  }
+}
+
+
+.ps-list-info {
+  > li {
+    padding: 0;
+    margin: 0;
+  }
+
+  &-title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: $color-text;
+    font-size: $font-size-base !important;
+    font-weight: bold;
+  }
+
+  &-name {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: $color-text-light;
+    font-size: $font-size-sm !important;
+    line-height: $line-height-sm;
+  }
+
+  &-content {
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+    color: $color-text-dark;
+  }
+}
+
+
+.ps-list-column {
+  > li {
+    padding: $padding-base;
+    margin: 0;
+    border-bottom: $divider;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+
+.ps-list-alerts {
+  .ps-list-item {
+    padding-top: $padding-sm;
+    padding-bottom: $padding-sm;
+    font-size: $font-size-xs;
+
+    &:nth-child(2) {
+      .ps-list-alerts-check {
+        display: none;
+      }
+    }
+
+    @extend %clearfix;
+
+    @include media('medium') {
+      font-size: $font-size-sm;
+    }
+  }
+
+  .ps-form-label {
+    display: block;
+    float: left;
+    width: 80%;
+  }
+
+  .submitel {
+    padding-top: $padding-lg;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+.ps-list-alerts-check {
+  display: table;
+  float: right;
+  width: 20%;
+  text-align: center;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    
+    &:first-child {
+      padding-right: $padding-sm;
+    }
+  }
+
+  @extend %clearfix;
+}

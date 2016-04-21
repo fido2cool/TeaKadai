@@ -1,0 +1,79 @@
+//
+//  POPOVER COMPONENT
+//
+
+
+
+.ps-popover {
+  position: absolute;
+  z-index: map-get($zindex, popover);
+  overflow: hidden;
+  width: 320px;
+  background-color: $popover-bg;
+  border: $popover-border;
+
+  @extend %box-shadow-dark;
+
+  @include media('large') {
+    width: 400px;
+  }
+
+  @include media('small') {
+    left: 0 !important;
+    width: 100%;
+  }
+}
+
+
+.ps-popover-list {
+  @extend %ps-list;
+
+  max-height: 268px;
+  overflow: auto;
+
+  > li {
+    padding: 0;
+    margin: 0;
+
+    &:first-child {
+      .ps-comment-item {
+        border-top: none;
+      }
+    }
+  }
+
+  .ps-avatar-comment {
+    padding-top: 0;
+    vertical-align: middle;
+  }
+}
+
+
+.ps-popover-loading {
+  text-align: center;
+}
+
+
+.ps-popover-actions {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
+
+.ps-popover-footer {
+  text-align: center;
+
+  > a {
+    display: block;
+    padding: $padding-sm;
+    background: $popover-more-bg;
+    color: $popover-more-color !important;
+
+    &:hover,
+    &:focus {
+      background: $popover-more-bg-hover;
+      color: $popover-more-color-hover !important;
+    }
+  }
+}

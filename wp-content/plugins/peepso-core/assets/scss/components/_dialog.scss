@@ -1,0 +1,140 @@
+//
+//  DIALOG COMPONENT
+//
+
+
+
+.ps-dialog {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  color: $color-text;
+  border: $dialog-border;
+  background-color: $dialog-bg;
+
+  @extend %box-shadow-dark;
+
+  .ps-postbox {
+    margin-bottom: 0;
+  }
+
+  @include media('medium') {
+    width: 400px;
+  }
+}
+
+
+.ps-dialog-wide {
+  @include media('large') {
+    width: 600px;
+  }
+}
+
+
+.ps-dialog-full {
+  @include media('large') {
+    width: auto;
+    max-width: 960px;
+
+    #cWindowContent {
+      overflow-y: auto;
+      overflow-x: hidden;
+      max-height: 480px;
+    }
+  }
+}
+
+
+.ps-dialog-wrapper {
+  position: fixed;
+  z-index: map-get($zindex, dialog);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,.65);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @include media('medium') {
+    background-color: transparent;
+  }
+}
+
+
+.ps-dialog-container {
+  width: 100%;
+  padding-bottom: 80%;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  @include media('medium') {
+    padding-bottom: 0;
+    height: 100%;
+  }
+}
+
+
+.ps-dialog-header {
+  padding: $padding-sm $padding-base;
+  background-color: $dialog-header-bg;
+  color: $dialog-header-color;
+  font-size: $font-size-base;
+  text-align: left;
+
+  @extend %clearfix;
+}
+
+
+.ps-dialog-title {
+  float: left;
+  display: block;
+  font-weight: bold;
+}
+
+
+.ps-dialog-close {
+  float: right;
+  display: block;
+
+  span {
+    color: $dialog-close;
+
+    &:hover,
+    &:focus {
+      color: $dialog-close-hover;
+    }
+  }
+}
+
+
+.ps-dialog-body {
+  overflow-y: auto;
+  padding: $padding-base;
+  font-size: $font-size-base;
+  text-align: left;
+
+  @extend %clearfix;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
+.ps-dialog-footer {
+  padding: $padding-sm $padding-base;
+  background-color: $dialog-footer-bg;
+  text-align: right;
+
+  &:empty {
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+//
+//  SUBMENU COMPONENT
+//
+
+
+
+.ps-submenu {
+  @extend %ps-list;
+
+  background-color: $submenu-bg;
+  border-top: $submenu-border;
+  border-left: $submenu-border;
+  border-right: $submenu-border;
+
+  > li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    border-right: $submenu-separator;
+
+    > a {
+      display: block;
+      padding: 6px $padding-base;
+      background-color: $submenu-bg;
+      color: $submenu-color !important;
+      font-size: $font-size-sm;
+      line-height: $line-height-sm;
+
+      &:hover,
+      &:focus {
+        background-color: $submenu-bg-hover;
+        color: $submenu-color-hover !important;
+      }
+
+      &.active {
+        background-color: $submenu-bg-active;
+        color: $submenu-color-active !important;
+
+        span {
+          color: $color-text-light !important;
+        }
+      }
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  @extend %clearfix;
+}
+
+.ps-submenu-page {
+  border-top: none;
+}

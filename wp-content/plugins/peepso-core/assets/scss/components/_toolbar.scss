@@ -1,0 +1,201 @@
+//
+//  TOOLBAR COMPONENT
+//
+//  Designed to display menu-items inline,
+//  supports dropdown and popover components.
+
+
+//  Mobile toolbar displays notification icons
+//  as menu items.
+
+.ps-toolbar {
+  position: relative;
+  margin-bottom: $padding-base;
+  background-color: $toolbar-bg;
+  border: $toolbar-border;
+
+  > ul {
+    @extend %ps-list;
+
+    display: table;
+    width: 100%;
+
+    > li {
+      display: table-cell;
+      padding: 0;
+      margin-left: 0;
+
+      > a {
+        position: relative;
+        display: block;
+        padding: 12px $padding-sm;
+        color: $toolbar-color !important;
+        font-size: $font-size-alt;
+        line-height: $line-height-sm;
+        text-align: center;
+
+        &:hover,
+        &:focus,
+        &.active {
+          background-color: $toolbar-bg-hover;
+          color: $toolbar-color-hover !important;
+        }
+      }
+
+      &:first-child {
+        border-right: $toolbar-separator;
+      }
+
+      &:last-child {
+        border-left: $toolbar-separator;
+      }
+    }
+  }
+
+  [class^="ps-icon"] {
+    fill: $toolbar-color;
+  }
+
+  @include media('medium') {
+    display: none;
+  }
+}
+
+
+//  Toggles menu (.ps-toolbar-menu) with listed
+//  all other links on mobile.
+
+.ps-toolbar-toggle {
+  display: block;
+  padding: 12px $padding-sm;
+  border: none;
+  background-color: $toolbar-bg;
+  color: $toolbar-color;
+  font-size: $font-size-sm !important;
+  line-height: $line-height-sm;
+
+  &:hover,
+  &:focus,
+  &.active {
+    border: none;
+    background-color: $toolbar-bg-hover;
+    color: $toolbar-color-hover;
+  }
+}
+
+
+//  Menu with listed all parent links and dropdowns
+//  on mobile.
+
+.ps-toolbar-menu {
+  overflow: hidden;
+  height: 0;
+  margin-top: -13px;
+  background-color: $toolbar-bg;
+
+  @extend %box-shadow;
+
+  > ul {
+    @extend %ps-list;
+
+    padding-bottom: $padding-base;
+
+    > li {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: $toolbar-separator;
+    }
+  }
+
+  a {
+    display: block;
+    padding: $padding-sm $padding-base;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+    }
+
+    &.ps-dropdown-toggle {
+      background-image: url(../../assets/images/sprites/caret-sprite.png);
+      background-repeat: no-repeat;
+      background-position: 96% -90%;
+      &.open {
+        background-position: 96% 190%;
+      }
+    }
+  }
+
+  .ps-right {
+    float: none;
+  }
+
+  &.in {
+    height: auto;
+  }
+
+  @include media('medium') {
+    display: none;
+  }
+}
+
+
+//  Displays notification icons and all parent menu links
+//  and links with dropdowns.
+
+.ps-toolbar-desktop {
+  display: none;
+  margin-bottom: $padding-base;
+  background-color: $toolbar-bg;
+  border: $toolbar-border;
+
+  > ul {
+    @extend %ps-list;
+
+    > li {
+      position: relative;
+      float: left;
+      padding: 0;
+      margin: 0 !important;
+      vertical-align: middle;
+
+      > a {
+        display: block;
+        padding: 10px $padding-sm;
+        color: $toolbar-color !important;
+        font-size: $font-size-alt;
+        line-height: $line-height-sm;
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &.active {
+          background-color: $toolbar-bg-hover;
+          color: $toolbar-color-hover !important;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  [class^="ps-icon"] {
+    fill: $toolbar-color;
+    line-height: inherit;
+  }
+
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+
+  @include media('medium') {
+    display: block;
+  }
+}

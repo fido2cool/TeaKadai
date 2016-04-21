@@ -1,0 +1,310 @@
+//
+// FORM STRUCTURE
+//
+
+
+
+.ps-form {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+%ps-input {
+  display: inline-block;
+  padding: 0 $padding-sm;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 35px;
+  border: $input-border;
+  color: $input-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $input-bg;
+  transition: all .25s ease-in-out;
+  box-shadow: none;
+
+  &:focus {
+    color: $input-color !important;
+    background-color: $input-bg;
+    border-color: $input-border-focus;
+  }
+
+  @extend %no-rounded;
+}
+
+
+.ps-input,
+.ps-select,
+input[type="text"].ps-input,
+input[type="password"].ps-input {
+  @extend %ps-input;
+}
+
+
+.ps-select {
+  background-image: url(../../assets/images/sprites/caret-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 100% -90%;
+
+  &:focus {
+    background-position: 100% 190%;
+  }
+}
+
+
+.ps-select-small {
+  padding-left: 3px;
+  padding-right: $padding-base;
+  background-position: 100% -30%;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+
+  &:focus {
+    background-position: 100% 130%;
+  }
+}
+
+
+.ps-checkbox {
+  position: relative;
+  line-height: 22px;
+
+  span,
+  label {
+    color: $color-text-light;
+    font-size: $font-size-sm;
+  }
+}
+
+
+.ps-form-legend {
+  margin-bottom: $padding-base;
+  color: $color-text;
+  font-size: $font-size-base;
+  font-weight: bold;
+}
+
+
+.ps-form-group {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: $padding-base;
+  color: $color-text-dark;
+
+  &.has-privacy {
+    padding-right: 60px;
+  }
+
+  > label {
+    font-size: $font-size-sm;
+
+    &:first-child {
+      vertical-align: middle;
+      display: table-cell;
+      width: 140px;
+      padding-right: $padding-base;
+    }
+  }
+
+  .ps-input,
+  .ps-select,
+  .ps-textarea {
+    width: 100%;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include media('medium') {
+    display: table;
+    padding-right: 60px;
+  }
+}
+
+
+.ps-form-controls {
+  margin-bottom: $padding-sm;
+}
+
+
+.ps-alerts-section {
+  line-height: 22px;
+
+  [type="checkbox"] + label:before {
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.ps-form-helper {
+  color: $color-text-light;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+}
+
+
+.ps-form-error{
+  @extend %ps-list;
+
+  display: block;
+  border-top: 2px solid lighten($form-error-color, 10%);
+
+  > li {
+    color: $form-error-color;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+}
+
+
+.ps-form-input {
+  @include media('large') {
+    display: inline-block;
+  }
+}
+
+
+.ps-form-input-icon {
+  position: relative;
+
+  .ps-icon {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+
+  .ps-input {
+    padding-left: ($padding-base * 2) !important;
+  }
+}
+
+
+.required-sign {
+  color: $required-sign-color;
+}
+
+
+.submitel {
+  @include media('medium') {
+    padding-left: 140px;
+  }
+}
+
+
+.ps-form-privacy {
+  display: block;
+
+  button {
+    width: 100%;
+    height: 35px;
+    margin-top: 4px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  @include media('medium') {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button {
+      margin-top: 0;
+    }
+  }
+}
+
+
+.ps-privacy-dropdown {
+  position: relative;
+
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+
+.ps-privacy-title {
+  @include media('medium') {
+    display: none;
+  }
+}
+
+
+.ps-textarea {
+  display: inline-block;
+  width: 100%;
+  padding: $padding-sm;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: $input-border;
+  background: $input-bg;
+  color: $input-color;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  transition: all .25s ease-in-out;
+  box-shadow: none;
+
+  &:focus {
+    color: $input-color;
+    border-color: $input-border-focus;
+  }
+
+  @extend %no-rounded;
+}
+
+
+.ps-textarea-wrapper {
+  position: relative;
+
+  .ps-icon-add {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+
+.ps-form-search {
+  position: relative;
+  margin-bottom: $padding-base;
+  padding-right: 35px;
+
+  input[type="text"] {
+    width: 100%;
+    display: block;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .ps-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: block;
+    height: 35px;
+  }
+
+  @extend %clearfix;
+}
+
+
+.ps-form-search-messages {
+  padding-right: 45px;
+}
+
+
+.ps-form-search-opt {
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: $font-size-md;
+  line-height: 34px;
+}
